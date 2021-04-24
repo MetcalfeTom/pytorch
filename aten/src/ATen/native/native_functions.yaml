@@ -1640,6 +1640,12 @@
   variants: method  # This is method-only to match the previous tensor API. In the future we could make this a function too.
   device_guard: False
 
+- func: expand_dims(Tensor tensor, int dim) -> Tensor
+  variants: function, method
+  device_guard: False
+  dispatch:
+    CompositeExplicitAutograd: expand_dims
+
 - func: eye(int n, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None) -> Tensor
 
 - func: eye.m(int n, int m, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None) -> Tensor

@@ -721,6 +721,7 @@ _(aten, unsafe_chunk) \
 _(aten, unsafe_split) \
 _(aten, unsafe_split_with_sizes) \
 _(aten, unsqueeze) \
+_(aten, expand_dims) \
 _(aten, upsample_bilinear2d) \
 _(aten, upsample_bilinear2d_backward) \
 _(aten, upsample_bilinear2d_forward) \
